@@ -6,7 +6,7 @@
 
 // Plugins
 import { registerPlugins } from '@/plugins'
-
+import persistedState from 'pinia-plugin-persistedstate'
 // Components
 import App from './App.vue'
 
@@ -16,6 +16,7 @@ import { createPinia } from 'pinia'
 import router from './router'
 
 const pinia = createPinia()
+pinia.use(persistedState)
 
 const app = createApp(App).use(router).use(pinia)
 
