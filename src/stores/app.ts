@@ -32,7 +32,7 @@ export const useAppStore = defineStore('app', {
       
     }
   },
-  persist: {
-    paths: {}
-  }
+  // persist: {
+  //   paths: {}
+  // }
 })

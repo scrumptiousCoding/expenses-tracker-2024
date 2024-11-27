@@ -7,6 +7,7 @@
 // Plugins
 import { registerPlugins } from '@/plugins'
 import persistedState from 'pinia-plugin-persistedstate'
+import VueApexCharts from "vue3-apexcharts";
 // Components
 import App from './App.vue'
 
@@ -19,7 +20,7 @@ const pinia = createPinia()
 pinia.use(persistedState)
 
 const app = createApp(App).use(router).use(pinia)
-
+app.use(VueApexCharts);
 registerPlugins(app)
 
 app.mount('#app')
