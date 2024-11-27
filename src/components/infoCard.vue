@@ -3,11 +3,11 @@
         <div class="bookmark-right"></div>
         <div class="card-border">
         <v-card-text>
-            <p class="info-card-title" style="font-size: small;">
-                Income
+            <p class="info-card-title">
+                {{ props.title }}
             </p>
             <h3>
-                R 999 999 999.00
+                R {{ props.amount }}
             </h3>
         </v-card-text>
         </div>
@@ -19,7 +19,12 @@
   
   export default defineComponent({
     name: "InfoCard",
-    setup() {
+    props: {
+        title: String,
+        amount: Number
+    },
+    setup(props) {
+        return {props}
     },
   });
   </script>
