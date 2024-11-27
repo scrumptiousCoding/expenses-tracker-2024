@@ -32,9 +32,7 @@ export const useAppStore = defineStore('app', {
       
     }
   },
-  persistedState: {
-    persist: true,
-    overwrite: true,
-    includePaths: ['timeframes']
+  persist: {
+    paths: ['timeframes']
   }
 })
