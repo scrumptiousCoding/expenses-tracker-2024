@@ -16,7 +16,7 @@
               <p class="text-center px-5">
                 This is a demo project and as such might be liable to bugs and
                 minor issues. Please use it as intended or reload the page to
-                start anew.
+                start anew (aka do not let a QA near it).
               </p>
               <h3 class="text-center mt-2">
                 This is a little showcase that will contain the following:
